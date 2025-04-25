@@ -1,0 +1,276 @@
+.ovaev-event-countdown .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+.ovaev-event-countdown .text-yellow {
+  color: #F1FF4F;
+}
+.ovaev-event-countdown .event-time {
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+}
+.ovaev-event-countdown .event-time .item {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ovaev-event-countdown .event-time .item .time {
+  text-align: center;
+  align-self: center;
+}
+.ovaev-event-countdown .event-time .item .time h5 {
+  position: relative;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+.ovaev-event-countdown .event-time .item .time h5:after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: #D9D9D9;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .ovaev-event-countdown .event-time .item .time h5 {
+    font-size: 28px;
+  }
+}
+.ovaev-event-countdown .event-time .item .time p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 21px;
+}
+@media screen and (max-width: 767px) {
+  .ovaev-event-countdown .event-time .item .time p {
+    font-size: 14px;
+  }
+}
+.ovaev-event-countdown .event-time .item .colon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ovaev-event-countdown .event-time .item .colon_inner {
+  transform: rotate(90deg);
+}
+.ovaev-event-countdown .event-time .item .colon .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.ovaev-event-countdown hr {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 520px;
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 1px;
+}
+
+@media screen and (max-width: 520px) {
+  .ovaev-event-countdown hr {
+    display: none;
+  }
+}
+.ovaev-upcoming-event .list-events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ovaev-upcoming-event .list-events .item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 204px;
+  border-bottom: 1px solid #1E1D25;
+}
+@media screen and (max-width: 1000px) {
+  .ovaev-upcoming-event .list-events .item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  .ovaev-upcoming-event .list-events .item .event-date, .ovaev-upcoming-event .list-events .item .event-info {
+    text-align: center;
+  }
+}
+.ovaev-upcoming-event .list-events .event-date {
+  flex-shrink: 0;
+}
+.ovaev-upcoming-event .list-events .event-date h4 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.ovaev-upcoming-event .list-events .event-date p {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 0;
+}
+.ovaev-upcoming-event .list-events .event-image img {
+  width: 245px;
+  height: 105px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+.ovaev-upcoming-event .list-events .event-info h5 {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.ovaev-upcoming-event .list-events .event-info h5 a {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+.ovaev-upcoming-event .list-events .event-info h5 a:hover {
+  color: var(--primary);
+}
+.ovaev-upcoming-event .list-events .event-info p {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  transition: all linear 0.3s;
+}
+.ovaev-upcoming-event .list-events .event-info p i {
+  font-size: 16px;
+  color: var(--primary);
+  display: inline-block;
+  margin-right: 10px;
+}
+.ovaev-upcoming-event .list-events .event-price h5 {
+  font-size: 32px;
+  font-weight: normal;
+  color: var(--primary);
+  display: inline-block;
+  padding: 21px 45px;
+  border: 1px solid #1E1D25;
+  margin: 0;
+}
+.ovaev-upcoming-event .list-events .event-singer-book .singer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 35px;
+}
+.ovaev-upcoming-event .list-events .event-singer-book .singer img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  object-fit: cover;
+}
+.ovaev-upcoming-event .list-events .event-singer-book .book-ticket {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 15px 27px;
+  border: 1px solid #1E1D25;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.ovaev-upcoming-event .list-events .event-singer-book .book-ticket:hover {
+  background-color: #FF4638;
+  border-color: #FF4638;
+}
+
+.ova-event-date {
+  position: relative;
+  text-align: center;
+}
+.ova-event-date .new-status {
+  position: absolute;
+  width: 86px;
+  height: 80px;
+  display: inline-flex;
+  justify-content: center;
+  top: -0.5px;
+  left: 0;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #fff;
+  background-color: #E50909;
+  webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.ova-event-date .new-status span {
+  display: inline-block;
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+.ova-event-date .title {
+  margin: 0;
+  padding: 40px;
+  font-size: 50px;
+  line-height: 1;
+  color: #000;
+  background: #E2E200;
+}
+@media (max-width: 767px) {
+  .ova-event-date .title {
+    font-size: 42px;
+    padding: 32px 20px;
+  }
+}
+.ova-event-date .info {
+  background: #fff;
+}
+.ova-event-date .info .date {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  padding: 32px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.38);
+}
+@media (max-width: 767px) {
+  .ova-event-date .info .date {
+    font-size: 40px;
+  }
+}
+.ova-event-date .info p {
+  margin: 0;
+  padding: 15px 10px 25px 10px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #281E1E;
+  text-transform: capitalize;
+}
+.ova-event-date .info p i {
+  font-size: 16px;
+  color: #FE392A;
+}
+.ova-event-date .info p .location {
+  display: inline-block;
+  margin-right: 10px;
+}
+.ova-event-date .info p .time {
+  display: inline-block;
+  margin-left: 10px;
+}

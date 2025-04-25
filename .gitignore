@@ -1,0 +1,20 @@
+# Files and folders that should not be uploaded to GitHub
+
+# Sensitive configuration
+wp-config.php
+.env
+
+# Uploads and backups
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+
+# Vendor and dependencies
+node_modules/
+vendor/
+
+# Logs and local files
+*.log
+*.zip
+*.sql
